@@ -1,0 +1,29 @@
+.logo{
+	margin: 10px;
+}
+.navbar{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.container{
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+.sidebar{
+	flex: 2;
+	padding: 16px;
+	background: #f4f4f6;
+}
+.main{
+	flex: 8;
+	padding: 16px;
+	background: #f4f4f6;
+}
+.images{
+	flex: 2;
+	padding: 16px;
+	background: #f4f4f6;
+}
