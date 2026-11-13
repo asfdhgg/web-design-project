@@ -28,13 +28,9 @@
 	background: #f4f4f6;
 }
 
-.price{
-	font-color: green;
-	font-weight: bold;
-}
-
 .search{
 	padding: 12px;
+	border: none;
 	border-radius: 6px;
 	color:white;
 	text-aling: center;
@@ -54,6 +50,7 @@
 	align-items: center;
 	padding: 20px;
 	border-radius: 8px;
+	margin: auto;
 }
 
 .productimg{
@@ -75,12 +72,12 @@
 
 .info .price{
 	background-color: green;
-	color: white;
+	color: black;
 	margin-top: 10px;
 }
 
 .purchase {
-	background-color: dark-green;
-	color: white;
+	background-color: green;
+	color: black;
 	margin-top: 10px;
 }
