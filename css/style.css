@@ -28,6 +28,7 @@
 	background: #f4f4f6;
 }
 
-body{
-	background-color: #ffffff;
+.price{
+	font-color: green;
+	font-weight: bold;
 }
