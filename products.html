@@ -42,33 +42,43 @@
 		</div>
 
 		<div class="main">
-			<!--- products title--->
-			<h2>Products</h2>
-			<!--- searchbar--->
+			<h1>Products</h1>
 			<div class="search">
-				<!--- searchbar input with placeholder --->
-				<input type="text" id="search" placeholder="Search products">
-				<select id="categorys">
-					<!--- drop down options --->
+				<input type="search" id="searchbar" placeholder="search for products">
+				<select>
 					<option value="all">all</option>
 				</select>
 			</div>
-			<!--- product grid/section --->
+			<!-- product cards-->
 			<div class="products" id="grid">
 				<div class="productimg">
-					<img src="images/products.png" alt="products">
+					<img src="images/product.png" alt="product">
 				</div>
-					<h1>product name</h1>
-					<p>Description</p>
-					<p class="price">Price here</p>
-					<button class="purchase" onclick="purchase('product')">Purchase</button>
+				<div class="info">
+				<h1>product name</h1>
+				<p>description</p>
+			    <p class="price">0.00</p>
+				<button class="purchase" onclick="purchase('product')">Purchase</button>
 				</div>
 			</div>
-		   </div>
-		
-		
+
+			<div class="products" id="grid">
+				<div class="productimg">
+					<img src="images/product.png" alt="product">
+				</div>
+				<div class="info">
+				<h1>product name</h1>
+				<p>description</p>
+			    <p class="price">0.00</p>
+				<button class="purchase" onclick="purchase('product')">Purchase</button>
+				</div>
+			</div>
+		</div>
+
 		<div class="images">
-		
+
+		</div>
+
 		</div>
 		<script src="js/index.js"></script>
 		<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
