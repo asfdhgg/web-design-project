@@ -1,17 +1,38 @@
-// attempt to make nav page with javascript struggle
-let current= 1;
+function navFunction(page){
+    let currentPage=1;
 
-function displayPage(page){
-    current =page;
-}
 
-function nextPage(next){
-    let newPage = current+next;
+    currentPage=page;
 
-    if(newPage <1 || current >3){
-        return;
+    if(page==1){
+        document.getElementById("product4").style.display = "none";
+        document.getElementById("product3").style.display = "none";
+
+        document.getElementById("product1").style.display = "block";
+        document.getElementById("product2").style.display = "block";
+        
+        document.getElementById("product5").style.display = "none";
+        document.getElementById("product6").style.display = "none";
     }
-    else{
-        displayPage(newPage);
+
+    else if(page ==2){
+        document.getElementById("product2").style.display = "none";
+        document.getElementById("product1").style.display = "none";
+        document.getElementById("product5").style.display = "none";
+        document.getElementById("product6").style.display = "none";
+
+        document.getElementById("product3").style.display = "block";
+        document.getElementById("product4").style.display = "block";
+ 
+    }
+    else if(page==3){
+        document.getElementById("product3").style.display = "none";
+        document.getElementById("product4").style.display = "none";
+        document.getElementById("product2").style.display = "none";
+        document.getElementById("product1").style.display = "none";
+
+        document.getElementById("product5").style.display = "block";
+        document.getElementById("product6").style.display = "block";
+        
     }
 }

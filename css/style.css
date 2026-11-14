@@ -28,8 +28,10 @@
 	background: #f4f4f6;
 }
 
-body{
+.body{
 	background-color: #ffffff;
+
+}
 	
 
 /* About Page */
@@ -110,8 +112,10 @@ body{
 
 .products{
 	display:block;
+	background: #fff;
 	padding: 20px;
 	margin: 20px auto;
+
 }
 
 .info{
@@ -183,7 +187,11 @@ body{
 	border-radius: 5px;
 }
 
-.navPage button:hover{
-	background: green;
-
+.search h1{
+	color:black;
+	
 }
+
+
+
+
