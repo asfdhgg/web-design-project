@@ -164,6 +164,16 @@
 	border-radius: 5px;
 }
 
+.specss{
+	margin-top: 10px;
+	width: 30%;
+	padding: 10px;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	background-color:red;
+}
+
 
 
 .grid{
