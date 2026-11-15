@@ -7,3 +7,14 @@ function purchase(product){
 function navBar(page){
   window.location.href = page; //changes the page for the user to one they choose with a button
 }
+
+//shows information on product
+
+function displayInfo(id){
+  document.getElementById(id).style.display="block";
+}
+
+// hides information on products
+function hideInfo(hh){
+  document.getElementById(hh).style.display="none";
+}
