@@ -62,7 +62,7 @@
 				<p>5 stages.Under-counter. With/without pump.
 					capacity: 12 liters / hour
 				</p>
-			    <p class="price">350.00</p>
+			    <p class="price">€350.00</p>
 				<button class="purchase" onclick="purchase('product')">Purchase</button>
 				<button class="specss" onclick="displayInfo('info1');">information</button>
 				<div id="info1" class="specss" style="display:none;">
@@ -82,8 +82,16 @@
 					<p>6 stages. Under-counter. With pump
 					capacity: 12 liters/hour
 					</p>
-			    <p class="price">250.00</p>
+			    <p class="price">€250.00</p>
 				<button class="purchase" onclick="purchase('product2')">Purchase</button>
+				<button class="specss" onclick="displayInfo('info2');">information</button>
+				<div id="info2" class="specss" style="display:none;">
+					<h1>Product information</h1>
+					<p></p>
+					<p></p>
+					<p></p>
+					<button class="hide" onclick="hideInfo('info2')">hide information</button>
+				</div>
 				</div>
 			</div>
 
@@ -92,8 +100,16 @@
 					<img class="productimg"src="images/product3.png">
 					<h1>product3</h1>
 					<p>product3</p>
-					<p class="price2">0.00</p>
+					<p class="price2">€0.00</p>
 					<button class="purchase" onclick="purchase('product3')">Purchase</button>
+					<button class="specss" onclick="displayInfo('info3');">information</button>
+				<div id="info3" class="specss" style="display:none;">
+					<h1>Product information</h1>
+					<p></p>
+					<p></p>
+					<p></p>
+					<button class="hide" onclick="hideInfo('info3')">hide information</button>
+				</div>
 				</div>
 			</div>
 
@@ -102,8 +118,16 @@
 					<img class="productimg" src="images/product4.png">
 					<h1>product4</h1>
 					<p>product4</p>
-					<p class="price2">0.00</p>
+					<p class="price2">€0.00</p>
 					<button class="purchase" onclick="purchase('product4')">Purchase</button>
+					<button class="specss" onclick="displayInfo('info4');">information</button>
+				<div id="info4" class="specss" style="display:none;">
+					<h1>Product information</h1>
+					<p></p>
+					<p></p>
+					<p></p>
+					<button class="hide" onclick="hideInfo('info4')">hide information</button>
+				</div>
 				</div>
 			</div>
 
@@ -112,8 +136,16 @@
 					<img class="productimg" src="images/product5.png">
 					<h1>product5</h1>
 					<p>product5</p>
-					<p class="price2">0.00</p>
+					<p class="price2">€0.00</p>
 					<button class="purchase" onclick="purchase('product5')">Purchase</button>
+					<button class="specss" onclick="displayInfo('info5');">information</button>
+				<div id="info5" class="specss" style="display:none;">
+					<h1>Product information</h1>
+					<p></p>
+					<p></p>
+					<p></p>
+					<button class="hide" onclick="hideInfo('info5')">hide information</button>
+				</div>
 				</div>
 			</div>
 
@@ -122,8 +154,16 @@
 					<img class="productimg" src="images/product6.png">
 					<h1>product6</h1>
 					<p>product6</p>
-					<p class="price2">0.00</p>
+					<p class="price2">€0.00</p>
 					<button class="purchase" onclick="purchase('product5')">Purchase</button>
+					<button class="specss" onclick="displayInfo('info6');">information</button>
+				<div id="info6" class="specss" style="display:none;">
+					<h1>Product information</h1>
+					<p></p>
+					<p></p>
+					<p></p>
+					<button class="hide" onclick="hideInfo('info6')">hide information</button>
+				</div>
 				</div>
 			</div>
 
@@ -139,8 +179,16 @@
 		</div>
 
 		<div class="images">
-			<img src="images/image.png" alt="image">
+			<div class="cart">
+				<h1>Items in your chart</h1>
+				<div class="items">
+					<p>your cart is empty</p>
+				</div>
+				<h2>total</h2>
+			</div>
 
+			<button onclick="clear()">Clear cart</button>
+			<button onclick="purchase()">Purchase</button>
 		</div>
 
 		</div>
