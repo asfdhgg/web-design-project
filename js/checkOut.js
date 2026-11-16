@@ -3,6 +3,8 @@
 
 let total = parseFloat("0");
 
+let cart="";
+
 let price1= parseFloat("250.00");
 let price2= parseFloat("350.00");
 let price3= parseFloat("");
@@ -25,6 +27,7 @@ function checkOut(items){
 	if(items== item1.id){
 		console.log("product1")
 		let name1="Spring Power bUrO";
+		cart += name1;
 		total+= price1;
 
 	
@@ -32,7 +35,8 @@ function checkOut(items){
 
 	else if(items== item2.id){
 		console.log("product2")
-		let name2="Spring Power bUrO"
+		let name2="Spring Power bUrO";
+		cart += name2;
 		total += price2;
 
 		
@@ -41,18 +45,21 @@ function checkOut(items){
 	else if(items== item3.id){
 		console.log("product3")
 		let name3="";
+		cart += name3;
 		total+= price3;
 	}
 
 	else if(items== item4.id){
 		console.log("product4")
 		let name4="";
+		cart += name4;
 		total+= price4;
 	}
 
 	else if(items== item5.id){
 		console.log("product5")
 		let name5="";
+		cart+=name5;
 		total+= price5;
 
 	}
@@ -60,11 +67,25 @@ function checkOut(items){
 	else if(items== item6.id){
 		console.log("product6")
 		let name6="";
+		cart+= name6;
 		total+=price6;
 
 	}
 
 
+     document.getElementById('cart').innerText= cart;
+
 	document.getElementById('total').innerText = total;
 
 }
+
+
+function purchase(){
+
+
+	//alert("press confirm to buy all your names: "+cart+" "+"total= "+total)
+
+}
+
+
+

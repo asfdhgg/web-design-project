@@ -183,13 +183,29 @@
 			<div class="cart">
 				<h1>Items in your cart</h1>
 				<div class="items">
-					<p id="cart">your cart is empty</p>
+					<p>items in cart: <span id="cart">none</p>
 				</div>
 				<h2>total= €<span id="total">0.00</span></h2>
 			</div>
 
-			<button onclick="clear()">Clear cart</button>
-			<button onclick="purchase()">Purchase</button>
+			<button onclick="clearCart('cart')">Clear cart</button>
+			<button onclick="purchForm('forumm')">Purchase</button>
+			<div id="forumm" class="checkoutForum" style="display: none;">
+				<forum>
+					<label>Name on card</label>
+					<input type="text" placeholder="Enter your name"></input>
+					<label>Enter card number:</label>
+					<input type="number" placeholder="Enter your number"></input>
+					<label>Expire date</label>
+					<input type="date" placeholder="enter your card"></input>
+					<label>Ccv</label>
+					<input type="number" placeholder="enter your ccv"></input>
+				</forum>
+				<button onclick="">Purchase</button>
+
+
+
+			</div>
 		</div>
 
 		</div>
