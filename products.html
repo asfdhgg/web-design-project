@@ -183,12 +183,12 @@
 			<div class="cart">
 				<h1>Items in your cart</h1>
 				<div class="items">
-					<p id="cart">your cart is empty</p>
+					<p>items in cart: <span id="cart">none</p>
 				</div>
 				<h2>total= €<span id="total">0.00</span></h2>
 			</div>
 
-			<button onclick="clear()">Clear cart</button>
+			<button onclick="clearCart('cart')">Clear cart</button>
 			<button onclick="purchase()">Purchase</button>
 		</div>
 
