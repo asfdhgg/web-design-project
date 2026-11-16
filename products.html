@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<!-- java script-->
 		<script src="js/index.js"></script>
+		<script src="js/checkOut.js"></script>
 		<!-- bootstrap-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 	</head>
@@ -63,11 +64,11 @@
 					capacity: 12 liters / hour
 				</p>
 			    <p class="price">€350.00</p>
-				<button class="purchase" onclick="purchase('product')">Purchase</button>
+				<button class="purchase" onclick="checkOut('product1')">Purchase</button>
 				<button class="specss" onclick="displayInfo('info1');">information</button>
 				<div id="info1" class="specss" style="display:none;">
 					<h1>Product information</h1>
-					<p></p>
+					<p>test</p>
 					<p></p>
 					<p></p>
 					<button class="hide" onclick="hideInfo('info1')">hide information</button>
@@ -83,7 +84,7 @@
 					capacity: 12 liters/hour
 					</p>
 			    <p class="price">€250.00</p>
-				<button class="purchase" onclick="purchase('product2')">Purchase</button>
+				<button class="purchase" onclick="checkOut('product2')">Purchase</button>
 				<button class="specss" onclick="displayInfo('info2');">information</button>
 				<div id="info2" class="specss" style="display:none;">
 					<h1>Product information</h1>
@@ -100,12 +101,12 @@
 					<img class="productimg"src="images/product3.png">
 					<h1>product3</h1>
 					<p>product3</p>
-					<p class="price2">€0.00</p>
+					<p class="price2">€350.00</p>
 					<button class="purchase" onclick="purchase('product3')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info3');">information</button>
 				<div id="info3" class="specss" style="display:none;">
 					<h1>Product information</h1>
-					<p></p>
+					<p>test</p>
 					<p></p>
 					<p></p>
 					<button class="hide" onclick="hideInfo('info3')">hide information</button>
@@ -180,11 +181,11 @@
 
 		<div class="images">
 			<div class="cart">
-				<h1>Items in your chart</h1>
+				<h1>Items in your cart</h1>
 				<div class="items">
-					<p>your cart is empty</p>
+					<p id="cart">your cart is empty</p>
 				</div>
-				<h2>total</h2>
+				<h2>total= €<span id="total">0.00</span></h2>
 			</div>
 
 			<button onclick="clear()">Clear cart</button>

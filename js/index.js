@@ -18,3 +18,10 @@ function displayInfo(id){
 function hideInfo(hh){
   document.getElementById(hh).style.display="none";
 }
+
+
+function hideStuff(d1,d2){
+  document.getElementById(d1).style.display="block";
+  document.getElementById(d2).style.display="block";
+  console.log("test");
+}

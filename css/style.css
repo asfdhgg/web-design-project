@@ -392,3 +392,29 @@ footer p {
 
 
 
+  .specss{
+    background-color: grey;
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.specss h1{
+    font-size: 15px;
+}
+
+.specss .hide{
+    background-color: grey;
+    color:black;    
+}
+
+.specss .hide button{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+
+
