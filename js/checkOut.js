@@ -80,5 +80,12 @@ function checkOut(items){
 }
 
 
+function purchase(){
+
+
+	//alert("press confirm to buy all your names: "+cart+" "+"total= "+total)
+
+}
+
 
 

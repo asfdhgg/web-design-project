@@ -1,7 +1,5 @@
 //function for simple purchase noti
-function purchase(product){
-  alert("you just purchase "+product)
-}
+
 
 // function with page where it gets it from onclick() with the variable being there is the page they want to go to
 function navBar(page){
@@ -24,4 +22,10 @@ function hideStuff(d1,d2){
   document.getElementById(d1).style.display="block";
   document.getElementById(d2).style.display="block";
   console.log("test");
+}
+
+
+function purchForm(forumm){
+  document.getElementById(forumm).style.display="block";
+
 }
