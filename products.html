@@ -24,16 +24,16 @@
 		<div class="navbar" id="navv">
 			<ul class="nav">
 			  <li class="nav-item">
-				<a class="nav-link" href="#" onclick="navBar(home)">Home</a>
+				<a class="nav-link" href="#" onclick="navBar('index.html')">Home</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link active" aria-current="page" href="#" onclick="navBar(products)">Products</a>
+				<a class="nav-link active" aria-current="page" href="#" onclick="navBar('products.html')">Products</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link" href="#"onclick="navBar(about)">About</a>
+				<a class="nav-link" href="#"onclick="navBar('about.html')">About</a>
 			  </li>
 			   <li class="nav-item">
-				<a class="nav-link" href="#" onclick="navBar(contact)">Contact</a>
+				<a class="nav-link" href="#" onclick="navBar('contact.html')">Contact</a>
 			  </li>
 		</ul>
 		</div>
@@ -98,7 +98,7 @@
 
 			<div class="products" id="product3"style="display:none;">
 				<div class="info">
-					<img class="productimg"src="images/product3.png">
+					<img class="productimg"src="images/product5.png">
 					<h1>product3</h1>
 					<p>product3</p>
 					<p class="price2">€350.00</p>
@@ -174,7 +174,6 @@
 			<div class="pageNav">
 				<button onclick="navFunction(1)" id="current">1</button>
 				<button onclick="navFunction(2)" id="page">2</button>
-				<button onclick="navFunction(3)" id="page">3</button>
 			</div>
 			</div>
 		</div>
@@ -193,13 +192,13 @@
 			<div id="forumm" class="checkoutForum" style="display: none;">
 				<forum>
 					<label>Name on card</label>
-					<input type="text" placeholder="Enter your name"></input>
+					<input id="nam" type="text" placeholder="Enter your name"></input>
 					<label>Enter card number:</label>
-					<input type="number" placeholder="Enter your number"></input>
+					<input id="cardNum" type="number" placeholder="card number"></input>
 					<label>Expire date</label>
-					<input type="date" placeholder="enter your card"></input>
+					<input id="dat" type="date" placeholder="enter your card"></input>
 					<label>Ccv</label>
-					<input type="number" placeholder="enter your ccv"></input>
+					<input id="ccv" type="number" placeholder="enter your ccv"></input>
 				</forum>
 				<button onclick="">Purchase</button>
 

@@ -25,14 +25,4 @@ function navFunction(page){
         document.getElementById("product4").style.display = "block";
  
     }
-    else if(page==3){
-        document.getElementById("product3").style.display = "none";
-        document.getElementById("product4").style.display = "none";
-        document.getElementById("product2").style.display = "none";
-        document.getElementById("product1").style.display = "none";
-
-        document.getElementById("product5").style.display = "block";
-        document.getElementById("product6").style.display = "block";
-        
-    }
 }
