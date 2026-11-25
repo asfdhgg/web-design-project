@@ -85,6 +85,7 @@ function nightMode(){
     document.getElementById("navv").style.backgroundColor="white";
     document.getElementById("side").style.backgroundColor="white";
     document.getElementById("car").style.backgroundColor="white";
+    document.getElementById("im").style.backgroundColor="white";
     document.getElementById("ss").style.color="black";
     document.getElementById("ma").style.backgroundColor="white";
 
