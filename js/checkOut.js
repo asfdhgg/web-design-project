@@ -5,7 +5,7 @@ let total = parseFloat("0");
 
 let cart="";
 
-let price1= parseFloat("250.00");
+let price1= parseFloat("350.00");
 let price2= parseFloat("350.00");
 let price3= parseFloat("");
 let price4= parseFloat("");
