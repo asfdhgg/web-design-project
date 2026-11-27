@@ -87,16 +87,19 @@ function purchase(){
 	const date = document.getElementById("dat").value;
 	const cvv= document.getElementById("ccv").value;
 
-	let vaild = true;
+	let vaild  = true;
 	let error = "";
 
 	if(name=== ""|| name.length < 2){
 		vaild = false;
 		error="name is invaild";
+		document.getElementById("checkoutError").innerText=error;
+		return false;
 	}
-	else if (card=== "" || card.length!==16){
-		valid= false;
-		error="card number is wrong";
+	else if (card=== "" || card.length !== 16){
+		vaild = false;
+		error="card number must be 16 digits";
+		document.getElementById("checkoutError").innerText=error;
 		return false;
 	
 	}
@@ -104,18 +107,16 @@ function purchase(){
 	else if(date===""){
 		vaild=false;
 		error="no date";
+		document.getElementById("checkoutError").innerText=error;
 		return false;
 	}
 	else if(cvv===""||cvv.length!==3){
 		vaild = false;
 		error ="no cvv"
-		return false;
-	}
-
-	if(vaild===false){
 		document.getElementById("checkoutError").innerText=error;
 		return false;
 	}
+
 
 	alert("are your card details right "+ "name= "+ name+"  card number= "+card + " expire date= "+date+" cvv= "+cvv);
 
