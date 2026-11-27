@@ -5,7 +5,7 @@ let total = parseFloat("0");
 
 let cart="";
 
-let price1= parseFloat("250.00");
+let price1= parseFloat("350.00");
 let price2= parseFloat("350.00");
 let price3= parseFloat("");
 let price4= parseFloat("");
@@ -82,10 +82,48 @@ function checkOut(items){
 
 function purchase(){
 
+	const name = document.getElementById("nam").value.trim();
+	const card = document.getElementById("cardNum").value;
+	const date = document.getElementById("dat").value;
+	const cvv= document.getElementById("ccv").value;
 
-	alert("press confirm to buy all your names: "+cart+" "+"total= "+total)
+	let vaild = true;
+	let error = "";
 
+	if(name=== ""|| name.length < 2){
+		vaild = false;
+		error="name is invaild";
+	}
+	else if (card=== "" || card.length!==16){
+		valid= false;
+		error="card number is wrong";
+		return false;
+	
+	}
+
+	else if(date===""){
+		vaild=false;
+		error="no date";
+		return false;
+	}
+	else if(cvv===""||cvv.length!==3){
+		vaild = false;
+		error ="no cvv"
+		return false;
+	}
+
+	if(vaild===false){
+		document.getElementById("checkoutError").innerText=error;
+		return false;
+	}
+
+	alert("are your card details right "+ "name= "+ name+"  card number= "+card + " expire date= "+date+" cvv= "+cvv);
+
+	alert("Press confirm to buy" + cart +"total= €"+total);
+	alert("purchase sucessful");
+	return true;
 }
+
 
 
 

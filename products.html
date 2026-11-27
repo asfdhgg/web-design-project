@@ -17,7 +17,7 @@
 
 		<!-- logo-->
 		<div class="logo">
-			<img src="images/logo.png" alt="logo">
+			<img src="images/logo.webp" alt="logo">
 
 			</div>
 		<!-- bootstrap navbar using javascript to change pages-->
@@ -58,12 +58,12 @@
 			 <div class="grid">
 			<div class="products" id="product1">
 				<div class="info">
-				<img class="productimg" src="images/product1.png" alt="product1">
+				<img class="productimg" src="images/product1.webp" alt="product1">
 				<h1>Spring Power bUrO</h1>
 				<p>5 stages.Under-counter. With/without pump.
 					capacity: 12 liters / hour
 				</p>
-			    <p class="price">€350.00</p>
+			    <p class="price" id="price1">€350.00</p>
 				<button class="purchase" onclick="checkOut('product1')">Purchase</button>
 				<button class="specss" onclick="displayInfo('info1');">information</button>
 				<div id="info1" class="specss" style="display:none;">
@@ -78,12 +78,12 @@
 
 			<div class="products" id="product2">
 				<div class="info">
-					<img class="productimg" src="images/product2.png" alt="product2">
+					<img class="productimg" src="images/product2.webp" alt="product2">
 					<h1>Spring Power bUrO</h1>
 					<p>6 stages. Under-counter. With pump
 					capacity: 12 liters/hour
 					</p>
-			    <p class="price">€250.00</p>
+			    <p class="price"id="price2">€250.00</p>
 				<button class="purchase" onclick="checkOut('product2')">Purchase</button>
 				<button class="specss" onclick="displayInfo('info2');">information</button>
 				<div id="info2" class="specss" style="display:none;">
@@ -98,10 +98,10 @@
 
 			<div class="products" id="product3"style="display:none;">
 				<div class="info">
-					<img class="productimg"src="images/product5.png">
+					<img class="productimg"src="images/product5.webp">
 					<h1>product3</h1>
 					<p>product3</p>
-					<p class="price2">€350.00</p>
+					<p class="price"id="price3">€350.00</p>
 					<button class="purchase" onclick="purchase('product3')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info3');">information</button>
 				<div id="info3" class="specss" style="display:none;">
@@ -116,10 +116,10 @@
 
 			<div class="products" id="product4" style="display:none;">
 				<div class="info">
-					<img class="productimg" src="images/product4.png">
+					<img class="productimg" src="images/product4.webp">
 					<h1>product4</h1>
 					<p>product4</p>
-					<p class="price2">€0.00</p>
+					<p class="price" id="price4">€0.00</p>
 					<button class="purchase" onclick="purchase('product4')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info4');">information</button>
 				<div id="info4" class="specss" style="display:none;">
@@ -134,10 +134,10 @@
 
 			<div class="products" id="product5" style="display:none;">
 				<div class="info">
-					<img class="productimg" src="images/product5.png">
+					<img class="productimg" src="images/product5.webp">
 					<h1>product5</h1>
 					<p>product5</p>
-					<p class="price2">€0.00</p>
+					<p class="price"id="price5">€0.00</p>
 					<button class="purchase" onclick="purchase('product5')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info5');">information</button>
 				<div id="info5" class="specss" style="display:none;">
@@ -152,10 +152,10 @@
 
 			<div class="products" id="product6" style="display:none;">
 				<div class="info">
-					<img class="productimg" src="images/product6.png">
+					<img class="productimg" src="images/product6.webp">
 					<h1>product6</h1>
 					<p>product6</p>
-					<p class="price2">€0.00</p>
+					<p class="price"id="price6">€0.00</p>
 					<button class="purchase" onclick="purchase('product5')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info6');">information</button>
 				<div id="info6" class="specss" style="display:none;">
@@ -188,8 +188,7 @@
 				<h2>total= €<span id="total">0.00</span></h2>
 			</div>
 
-			<button onclick="clearCart('cart')">Clear cart</button>
-			<button onclick="purchForm('forumm')">Purchase</button>
+			<button id="temp" onclick="purchForm('forumm')">Purchase</button>
 			<div id="forumm" class="checkoutForum" style="display: none;">
 				<forum>
 					<label>Name on card</label>
@@ -197,11 +196,16 @@
 					<label>Enter card number:</label>
 					<input id="cardNum" type="number" placeholder="card number"></input>
 					<label>Expire date</label>
-					<input id="dat" type="date" placeholder="enter your card"></input>
+					<input id="dat" type="text" placeholder="enter your card"></input>
 					<label>Ccv</label>
-					<input id="ccv" type="number" placeholder="enter your ccv"></input>
+					<input id="ccv" type="text" placeholder="enter your ccv"></input>
 				</forum>
-				<button onclick="purchase()">Purchase</button>
+				<button onclick="purchase()"> confirm purchase</button>
+				<button id="clear" style="display: none;"onclick="clearCart('')">Clear cart</button>
+
+				<samp>
+					<p id="checkoutError" style="color:red;"></p>
+				</samp>
 
 
 

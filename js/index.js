@@ -46,7 +46,9 @@ function hideStuff(d1,d2){
 
 
 function purchForm(forumm){
-  document.getElementById(forumm).style.display="block";
+  document.getElementById("forumm").style.display="block";
+  document.getElementById("temp").style.display="none";
+  document.getElementById("clear").style.display="block";
 
 }
 let night= false;
@@ -70,6 +72,14 @@ function nightMode(){
       document.getElementById("product"+ i).style.backgroundColor="black";
       document.getElementById("product"+i).style.color="white";
     }
+
+    for(let i=1; i<=6; i++){
+      let price = document.getElementById("price"+ i);
+      
+      if(price){
+        price.style.color="white";
+      }
+    }
   }
   else{
     night= false;
@@ -82,6 +92,13 @@ function nightMode(){
       document.getElementById("product"+i).style.color="black";
     }
 
+    for(let i=1; i<=6; i++){
+      let price1 = document.getElementById("price"+ i);
+      if(price1){
+        price1.style.color="black";
+      }
+    }
+
     document.getElementById("navv").style.backgroundColor="white";
     document.getElementById("side").style.backgroundColor="white";
     document.getElementById("car").style.backgroundColor="white";
@@ -90,4 +107,19 @@ function nightMode(){
     document.getElementById("ma").style.backgroundColor="white";
 
   }
+}
+
+
+
+function clearCart(){
+  cart="";
+  total=0;
+
+  document.getElementById("cart").innerText="none";
+  document.getElementById("total").innerText="0.00";
+  document.getElementById("forumm").style.display="none";
+  document.getElementById("temp").style.display="block";
+  
+  alert("cleared cart");
+
 }
