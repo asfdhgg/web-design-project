@@ -418,3 +418,9 @@ footer p {
 }
 
 
+.night{
+    padding: 9px;
+    border-radius: 8px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
