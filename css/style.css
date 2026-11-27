@@ -367,7 +367,7 @@ header {
 /* Footer */
 footer {
     background-color: #f1f7fa;
-    color: #167b83;
+    color: #29022e;
     text-align: center;
     padding: 15px;
 }
@@ -393,7 +393,7 @@ footer p {
 
 
 
-  .specss{
+.specss{
     background-color: grey;
     color: black;
     padding: 10px;
@@ -424,3 +424,43 @@ footer p {
     align-self: flex-end;
     margin-bottom: 5px;
 }
+
+
+
+.cart{
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    position: sticky;
+    top: 20px;
+}
+
+
+.cart h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.cart p{
+    font-size:15px;
+    margin:12px 0;
+}
+
+.cart h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cart button{
+    width:100%;
+    padding: 12px;
+    margin-top: 10px;
+    border:none;
+    border-radius: 7px;
+}
+
