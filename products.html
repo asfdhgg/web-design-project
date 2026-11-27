@@ -41,7 +41,6 @@
 		<div class="container">
 		<div class="sidebar" id="side">
 			<!--searchbar-->
-			<button class="night" onclick="nightMode()">NightMode</button>
 			<div class="search">
 				<h1 id="ss">Search Bar</h1>
 				<input type="search" id="searchbar" placeholder="search for products">
@@ -64,7 +63,7 @@
 				<p>5 stages.Under-counter. With/without pump.
 					capacity: 12 liters / hour
 				</p>
-			    <p class="price">€350.00</p>
+			    <p class="price" id="price1">€350.00</p>
 				<button class="purchase" onclick="checkOut('product1')">Purchase</button>
 				<button class="specss" onclick="displayInfo('info1');">information</button>
 				<div id="info1" class="specss" style="display:none;">
@@ -84,7 +83,7 @@
 					<p>6 stages. Under-counter. With pump
 					capacity: 12 liters/hour
 					</p>
-			    <p class="price">€250.00</p>
+			    <p class="price"id="price2">€250.00</p>
 				<button class="purchase" onclick="checkOut('product2')">Purchase</button>
 				<button class="specss" onclick="displayInfo('info2');">information</button>
 				<div id="info2" class="specss" style="display:none;">
@@ -102,7 +101,11 @@
 					<img class="productimg"src="images/product5.png">
 					<h1>product3</h1>
 					<p>product3</p>
-					<p class="price2">€350.00</p>
+<<<<<<< Updated upstream
+					<p class="price"id="price3">€350.00</p>
+=======
+					<p class="price" id="price3">€350.00</p>
+>>>>>>> Stashed changes
 					<button class="purchase" onclick="purchase('product3')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info3');">information</button>
 				<div id="info3" class="specss" style="display:none;">
@@ -120,7 +123,7 @@
 					<img class="productimg" src="images/product4.png">
 					<h1>product4</h1>
 					<p>product4</p>
-					<p class="price2">€0.00</p>
+					<p class="price" id="price4">€0.00</p>
 					<button class="purchase" onclick="purchase('product4')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info4');">information</button>
 				<div id="info4" class="specss" style="display:none;">
@@ -138,7 +141,7 @@
 					<img class="productimg" src="images/product5.png">
 					<h1>product5</h1>
 					<p>product5</p>
-					<p class="price2">€0.00</p>
+					<p class="price"id="price5">€0.00</p>
 					<button class="purchase" onclick="purchase('product5')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info5');">information</button>
 				<div id="info5" class="specss" style="display:none;">
@@ -156,7 +159,7 @@
 					<img class="productimg" src="images/product6.png">
 					<h1>product6</h1>
 					<p>product6</p>
-					<p class="price2">€0.00</p>
+					<p class="price"id="price6">€0.00</p>
 					<button class="purchase" onclick="purchase('product5')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info6');">information</button>
 				<div id="info6" class="specss" style="display:none;">
@@ -180,6 +183,7 @@
 		</div>
 
 		<div class="images" id="im">
+			<button class="night" onclick="nightMode()">NightMode</button>
 			<div class="cart" id="car">
 				<h1>Items in your cart</h1>
 				<div class="items">
@@ -190,7 +194,7 @@
 
 			<button onclick="clearCart('cart')">Clear cart</button>
 			<button onclick="purchForm('forumm')">Purchase</button>
-			<div id="forumm" class="checkoutForum" style="display: none;">
+			<div id="forumm" class="checkoutForum" onsubmit="purchase()"style="display: none;">
 				<forum>
 					<label>Name on card</label>
 					<input id="nam" type="text" placeholder="Enter your name"></input>
@@ -199,7 +203,7 @@
 					<label>Expire date</label>
 					<input id="dat" type="date" placeholder="enter your card"></input>
 					<label>Ccv</label>
-					<input id="ccv" type="number" placeholder="enter your ccv"></input>
+					<input id="ccv" type="text" placeholder="enter your ccv"></input>
 				</forum>
 				<button onclick="purchase()">Purchase</button>
 
