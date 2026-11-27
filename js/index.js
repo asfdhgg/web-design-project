@@ -70,6 +70,14 @@ function nightMode(){
       document.getElementById("product"+ i).style.backgroundColor="black";
       document.getElementById("product"+i).style.color="white";
     }
+
+    for(let i=1; i<=6; i++){
+      let price = document.getElementById("price"+ i);
+      
+      if(price){
+        price.style.color="white";
+      }
+    }
   }
   else{
     night= false;
@@ -80,6 +88,13 @@ function nightMode(){
      for(let i =1; i <=6; i++){
       document.getElementById("product"+ i).style.backgroundColor="white";
       document.getElementById("product"+i).style.color="black";
+    }
+
+    for(let i=1; i<=6; i++){
+      let price1 = document.getElementById("price"+ i);
+      if(price1){
+        price1.style.color="black";
+      }
     }
 
     document.getElementById("navv").style.backgroundColor="white";
