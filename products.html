@@ -101,11 +101,7 @@
 					<img class="productimg"src="images/product5.png">
 					<h1>product3</h1>
 					<p>product3</p>
-<<<<<<< Updated upstream
 					<p class="price"id="price3">€350.00</p>
-=======
-					<p class="price" id="price3">€350.00</p>
->>>>>>> Stashed changes
 					<button class="purchase" onclick="purchase('product3')">Purchase</button>
 					<button class="specss" onclick="displayInfo('info3');">information</button>
 				<div id="info3" class="specss" style="display:none;">
@@ -192,20 +188,24 @@
 				<h2>total= €<span id="total">0.00</span></h2>
 			</div>
 
-			<button onclick="clearCart('cart')">Clear cart</button>
-			<button onclick="purchForm('forumm')">Purchase</button>
-			<div id="forumm" class="checkoutForum" onsubmit="purchase()"style="display: none;">
+			<button id="temp" onclick="purchForm('forumm')">Purchase</button>
+			<div id="forumm" class="checkoutForum" style="display: none;">
 				<forum>
 					<label>Name on card</label>
 					<input id="nam" type="text" placeholder="Enter your name"></input>
 					<label>Enter card number:</label>
 					<input id="cardNum" type="number" placeholder="card number"></input>
 					<label>Expire date</label>
-					<input id="dat" type="date" placeholder="enter your card"></input>
+					<input id="dat" type="text" placeholder="enter your card"></input>
 					<label>Ccv</label>
 					<input id="ccv" type="text" placeholder="enter your ccv"></input>
 				</forum>
-				<button onclick="purchase()">Purchase</button>
+				<button onclick="purchase()"> confirm purchase</button>
+				<button id="clear" style="display: none;"onclick="clearCart('')">Clear cart</button>
+
+				<samp>
+					<p id="checkoutError" style="color:red;"></p>
+				</samp>
 
 
 

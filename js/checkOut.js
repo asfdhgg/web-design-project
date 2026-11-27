@@ -82,20 +82,19 @@ function checkOut(items){
 
 function purchase(){
 
-	const name = document.getElementById("nam").value;
+	const name = document.getElementById("nam").value.trim();
 	const card = document.getElementById("cardNum").value;
 	const date = document.getElementById("dat").value;
 	const cvv= document.getElementById("ccv").value;
+
 	let vaild = true;
 	let error = "";
 
 	if(name=== ""|| name.length < 2){
 		vaild = false;
-
 		error="name is invaild";
-		return false;
 	}
-	else if (card=== "" || card.length<16){
+	else if (card=== "" || card.length!==16){
 		valid= false;
 		error="card number is wrong";
 		return false;
@@ -107,60 +106,22 @@ function purchase(){
 		error="no date";
 		return false;
 	}
-	else if(cvv===""||cvv.length>3){
+	else if(cvv===""||cvv.length!==3){
 		vaild = false;
 		error ="no cvv"
 		return false;
 	}
 
-	else{
-		alert("is your card details correct "+name + card+date+cvv)
-		alert("press confirm to buy all your names: "+cart+" "+"total= "+total)
-		return true;
-
-	}
-
-<<<<<<< Updated upstream
-=======
-	const name = document.getElementById("nam").value;
-	const card = document.getElementById("cardNum").value;
-	const date = document.getElementById("dat").value;
-	const cvv= document.getElementById("ccv").value;
-	const vaild = true;
-	const error = "none";
-
-	if(name=== " "|| name.length < 2){
-		vaild = false;
-
-		error="name is invaild";
-		return false;
-	}
-	else if (card=== " " || card.length<16){
-		valid= false;
-		error="card number is wrong";
-		return false;
-	
-	}
-
-	else if(date===" "){
-		vaild=false;
-		error="no date";
-		return false;
-	}
-	else if(cvv===" "||cvv.length>3){
-		vaild = false;
-		error ="no cvv"
+	if(vaild===false){
+		document.getElementById("checkoutError").innerText=error;
 		return false;
 	}
 
-	else{
-		alert("is your card details correct "+name + card+date+cvv)
-		alert("press confirm to buy all your names: "+cart+" "+"total= "+total)
+	alert("are your card details right "+ "name= "+ name+"  card number= "+card + " expire date= "+date+" cvv= "+cvv);
 
-	}
-
->>>>>>> Stashed changes
-
+	alert("Press confirm to buy" + cart +"total= €"+total);
+	alert("purchase sucessful");
+	return true;
 }
 
 
