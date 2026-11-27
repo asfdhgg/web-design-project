@@ -71,12 +71,17 @@ function nightMode(){
       document.getElementById("product"+i).style.color="white";
     }
 
+<<<<<<< Updated upstream
     for(let i=1; i<=6; i++){
       let price = document.getElementById("price"+ i);
       
       if(price){
         price.style.color="white";
       }
+=======
+    for(let x =1; i<=6; x++){
+      document.getElementsByClassName("price"+x).style.color="white";
+>>>>>>> Stashed changes
     }
   }
   else{
@@ -90,11 +95,16 @@ function nightMode(){
       document.getElementById("product"+i).style.color="black";
     }
 
+<<<<<<< Updated upstream
     for(let i=1; i<=6; i++){
       let price1 = document.getElementById("price"+ i);
       if(price1){
         price1.style.color="black";
       }
+=======
+    for(let y =1; y<=6; y++){
+      document.getElementsByClassName("price"+y).style.color="black";
+>>>>>>> Stashed changes
     }
 
     document.getElementById("navv").style.backgroundColor="white";
